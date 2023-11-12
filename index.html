@@ -30,7 +30,7 @@ processText(quer);
 
     function processText(text) {
         text = text.toLowerCase();
-        const setColorCommand = "Set colour to";
+        const setColorCommand = "set colour to";
         if (text.includes(setColorCommand)) {
             var mycolor = text.replace(setColorCommand, '').replace('.', '').trim();
             console.log('Color:', mycolor);
