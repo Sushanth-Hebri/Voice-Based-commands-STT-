@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>voice commands -spt sushanth hebri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Voice Recognition</h1>
+    <textarea name="" id="speechToText" cols="50" rows="5" placeholder="Your voice messgae.."></textarea>
+    <button onclick="voice()">Click to speak</button>
+
+
+    <script>
+function voice(){
+    var recognition = new webkitSpeechRecognition();
+    recognition.lang="en-GB";
+    recognition.onresult = function(event){
+        console.log(event); 
+        const transcript = event.results[0][0].transcript;
+                document.getElementById("speechToText").value = transcript;
+quer = transcript;
+processText(quer);
+
+
+
+    }
+    recognition.start();
+
+    function processText(text) {
+       
+        const setColorCommand = "Set colour to";
+        if (text.includes(setColorCommand)) {
+            var mycolor = text.replace(setColorCommand, '').replace('.', '').trim();
+            console.log('Color:', mycolor);
+document.body.style.backgroundColor=mycolor;
+        }
+
+
+
+
+
+    }
+
+
+
+
+}
+    </script>
+</body>
+</html>
