@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: cornflowerblue;
+    width:100%;
+    height:100vh;
+    display: grid;
+    place-items: center;
+}
+textarea{
+    font-family: sans-serif;
+    padding: 15px 20px;
+    text-align: justify;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    color: rgb(0, 0, 0);
+    box-shadow: inset 5px 5px 5px grey;
+    border-radius: 8px;
+}
+button{
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    background-color: rgb(20, 55, 195);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+h1{
+    color: white;
+    margin-bottom: 10px;
+    text-shadow: 2px 3px 5px gray;
+letter-spacing: 2px;
+}
