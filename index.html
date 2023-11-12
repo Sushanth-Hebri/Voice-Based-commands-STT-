@@ -29,7 +29,7 @@ processText(quer);
     recognition.start();
 
     function processText(text) {
-       
+        text = text.toLowerCase();
         const setColorCommand = "Set colour to";
         if (text.includes(setColorCommand)) {
             var mycolor = text.replace(setColorCommand, '').replace('.', '').trim();
