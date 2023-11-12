@@ -11,6 +11,9 @@ body{
     place-items: center;
 }
 textarea{
+    background: url(https://source.unsplash.com/random/800x600);
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: sans-serif;
     padding: 15px 20px;
     text-align: justify;
